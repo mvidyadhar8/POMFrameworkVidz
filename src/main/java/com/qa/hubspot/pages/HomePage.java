@@ -55,7 +55,7 @@ public class HomePage extends BasePage {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(contactsTab));
 		contactsTab.click();
-		TestUtil.shortWait(); //From TestUtil.java class and in Constants.java files
+		TestUtil.shortWait(); //From TestUtil.java class and in Constants.java files. Test edit
 		contactsLink.click();
 		
 		return new ContactsPage(driver); //After clicking here, the user should be directed to Contacts page. Hence created a java class for it.
